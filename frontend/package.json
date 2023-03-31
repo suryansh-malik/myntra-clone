@@ -2,7 +2,7 @@
   "name": "myntra",
   "version": "0.1.0",
   "private": true,
-  "proxy":"http://localhost:1337",
+  "proxy":"https://myntra-clone-api.onrender.com",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@reduxjs/toolkit": "^1.9.1",
