@@ -1,0 +1,67 @@
+.beauty {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.beauty-main-content {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding-bottom:20px;
+  margin-bottom:15px;
+}
+.beauty-content {
+  padding: 15px 25px 20px 30px;
+  width:100%;
+  height: 100%;
+}
+
+.beauty2 {
+  background-color: rgba(223, 227, 218, 0.247);
+}
+
+.beauty4 {
+  background-color: rgba(223, 227, 218, 0.247);
+}
+.beauty-heading {
+  font-size: 13px;
+  text-decoration: none;
+  color: #0db7af;
+  font-weight: 600;
+}
+.beauty-heading-catagory {
+  margin-top: 5px;
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+  font-weight:400;
+  font-size:14px;
+}
+.beauty-heading-catagory:hover {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.715);
+}
+.beauty1-top{
+    border-bottom:1px solid rgba(128, 128, 128, 0.263);
+}
+.beauty2-top{
+    border-bottom:1px solid rgba(128, 128, 128, 0.263);
+    
+
+}
+.beauty2-middle{
+    border-bottom:1px solid rgba(128, 128, 128, 0.263);
+
+}
+.beauty3-top{
+    border-bottom:1px solid rgba(128, 128, 128, 0.263);
+
+}
+.beauty4-top{
+    border-bottom:1px solid rgba(128, 128, 128, 0.263);
+
+}
+.beauty5-top{
+    border-bottom:1px solid rgba(128, 128, 128, 0.263);
+
+}

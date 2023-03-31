@@ -1,0 +1,63 @@
+.single-product-box{
+    width: auto;
+    text-align: left;
+    overflow: hidden;
+    margin: 0 25.3px 30px;
+    height:100%;
+    /* border:1px solid; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    /* background-color:red; */
+}
+.single-product-box:hover{
+    transition:all 0.5s;
+    cursor:pointer;
+    box-shadow: 0px 1px 12px 5px rgba(210, 210, 210, 0.253);
+
+}
+.single-product-box img{
+    width:auto;
+    height: 280px;
+    margin-bottom:10px;
+
+}
+.single-product-details{
+    padding-left:10px;
+}
+.single-product-brand-name{
+font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+}
+.single-product-title{
+color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    font-weight:400;
+    margin-bottom: 8px;
+
+}
+.single-product-price-details{
+    margin-bottom:10px;
+}
+.single-product-actual-price{
+font-size: 14px;
+    font-weight: 500;
+    color: #282c3f;
+}
+.single-product-mrp-price{
+text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.single-product-offpercentage{
+color: #ff905a;
+    font-weight: 400;
+    font-size: 11px;
+    margin-left: 5px;
+}

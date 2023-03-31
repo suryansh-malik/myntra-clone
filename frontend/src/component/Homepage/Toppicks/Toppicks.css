@@ -1,0 +1,11 @@
+.toppicks-content{
+    width:100%;
+    height:auto;
+    display:flex;
+}
+.toppicks-container h1{
+margin-top:60px;
+margin-bottom:65px;
+margin-left: 30px;
+letter-spacing: 0.35rem;
+} 

@@ -1,0 +1,127 @@
+.wishlist-main-page{
+    width: 100%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    padding-top:80px;
+}
+.wishlist-man-content-page{
+    padding:40px 80px 40px 80px;
+}
+.wishlist-heading{
+color:black;
+margin-bottom:20px;
+}
+.wishlist-product-container{
+display:grid;
+grid-template-columns: repeat(auto-fill, minmax(218px, 1fr));
+gap:40px;
+}
+.wishlist-heading-item-number{
+    font-size:14px;
+    color:grey;
+
+}
+.wishlist-product-main-div{
+    overflow: hidden;
+    border: 1px solid #e9e9eb;
+    cursor: pointer;
+}
+
+.wishlist-product-image{
+    width:100%;
+    height:294px;
+}
+
+.wishist-product-name-div{
+    padding:0 10px 0 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:7px;
+}
+.wishlist-product-pricing-div{
+    display:flex;
+    align-items: center;
+    gap:10px;
+    justify-content:center;
+    border-bottom: 1px solid #e9e9eb;
+    padding:0px 0 20px 0;
+
+}
+.wishlist-product-actual-price{
+font-size:16px;
+font-weight:700;
+
+
+}
+.wishlist-product-mrp-price{
+text-decoration: line-through;
+color:grey;
+font-size:11px;
+font-weight:600;
+/* align-self: flex-end; */
+}
+.wishlist-product-off-percentage{
+color:#ff9866;
+font-size:12px;
+font-weight:600;
+}
+.wishlist-product-move-to-bag-div{
+    color:#ff3e6c;
+    font-weight:600;
+    font-size:15px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    cursor: pointer;
+    
+}
+.wishlit-product-inner-main-content{
+    position:relative;
+}
+.wishlist-remove-product{
+position:absolute;
+right:10px;
+top:5px;
+background-color:hsla(0,0%,100%,.6);
+border-radius:50%;
+padding:3px;
+width:22px;
+height:22px;
+cursor: pointer;
+
+}
+.empty-wishlist-main-div{
+    width:100%;
+    height:100vh;
+    padding-top:80px;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.empty-wishlist-inner-div{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap:20px;
+}
+.empty-wishlist-main-heading{
+font-weight:600;
+font-size:21px;
+}
+.empty-wishlist-message{
+font-size: 18px;
+    color: #94989f;
+}
+.continue-shopping-button{
+    text-transform: uppercase;
+    padding: 15px 40px 15px 40px;
+    border:1px solid #3466e8;
+    border-radius:4px;
+    color:#3466e8;
+    font-weight:700;
+    cursor: pointer;
+}
+.empty-wishlist-image{
+    margin: 20px 0 20px 0;
+}

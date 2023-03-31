@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    /* width:100%; */
+    /* margin-right:1px; */
+
+}
+.app{
+    position:relative;
+}
+.client-res-message{
+position:absolute;
+/* z-index:999; */
+top:150px;
+right:50px;
+background-color: #282c3f;
+padding:10px;
+/* color:#f16565; */
+color:rgba(255, 255, 255, 0.76);
+text-transform: capitalize;
+font-weight:700;
+font-size:14px;
+border-radius:3px;
+animation-name:message;
+animation-duration: 0.6s;
+position:fixed;
+}
+@keyframes message{
+    0%{
+        transform:translateY(-150px);
+        opacity:0;
+    }
+    60%{
+        transform:translateY(15px)
+    }
+    80%{
+        transform:translateY(-20px)
+
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px)
+    }
+}

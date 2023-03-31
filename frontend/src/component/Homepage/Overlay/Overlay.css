@@ -1,0 +1,46 @@
+.overlay {
+  animation-name: overl;
+  animation-duration: 0.45s;
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.450);
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+@keyframes overl {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity:0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.overlayout {
+  animation-name: overlout;
+  animation-duration: 0.55s;
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.450);
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes overlout {
+  0% {
+    opacity: 1;
+  }
+  50%{
+    opacity:1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
