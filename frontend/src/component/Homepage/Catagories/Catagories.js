@@ -85,45 +85,8 @@ const Catagories = () => {
       link: "/products/women",
     },
   ];
-  const bottomimages = [
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/09b3164c-241a-4134-baa1-49b12c56c3901645602466968-Bath-Essentials.jpg",
-    },
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/171a820e-96f0-4b11-a138-03953a7e05481645602467153-Trousers_W.jpg",
-    },
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/054a056f-33e8-4b6c-b747-9b88d7fce0a11645602467174-Watches.jpg",
-    },
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/d3c5cd23-392f-40be-8080-99ffb79c27261645602467128-Tops.jpg",
-    },
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/355b9499-3345-4457-8b3b-2eeceaecf4561645602467020-Infant-Essentials.jpg",
-    },
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/7f814546-b705-4d9b-9ab5-1ddfeca786391645602467001-Flip-Flops.jpg",
-    },
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/12c3b4aa-8160-442f-b93e-e896eafb1b0a1645602467160-T-Shirts-_-Shorts_Kids.jpg",
-    },
-    {
-      image:
-        "https://assets.myntassets.com/f_webp,w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/67783047-7fcc-4530-9368-9be75a713e411645602466995-Dresses.jpg",
-    },
-  ];
-
+  
   const topimage = topimages.map((e) => (
-    <Catagoriescard images={e.image} key={e.image} link={e.link} />
-  ));
-  const bottomimage = bottomimages.map((e) => (
     <Catagoriescard images={e.image} key={e.image} link={e.link} />
   ));
   const middleimage = middleimages.map((e) => (
@@ -134,7 +97,6 @@ const Catagories = () => {
       <h1>CATEGORIES TO BAG</h1>
       <div className="catagories-content">{topimage}</div>
       <div className="catagories-content">{middleimage}</div>
-      {/* <div className="catagories-content">{bottomimage}</div> */}
     </div>
   );
 };
