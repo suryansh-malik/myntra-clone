@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useCallback } from "react";
 import {useSelector,useDispatch} from 'react-redux'
 import "./Product.css";
 import Navbar from "../Homepage/Navbar/Navbar";
@@ -46,7 +46,7 @@ const Product = () => {
   // fetching products on basic of current url parameter
   // ======================//
 
-  const fetching = async () => {
+  const fetching = useCallback(async () => {
     setloading(true);
     const response = await fetch(
       `/products/${gendername}`,
@@ -59,10 +59,10 @@ const Product = () => {
     dispatch(mainproduct.setproduct(data));
 
     setloading(false);
-  };
+  },[gendername,dispatch]);
   useEffect(() => {
     fetching();
-  }, [gendername]);
+  }, [gendername,fetching]);
 
   const singleproduct = products.map((p) => (
     <Singleproduct
