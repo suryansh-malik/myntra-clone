@@ -5,7 +5,6 @@ import Daydeal from "./Daydeal/Daydeal";
 import Bestbrands from './Bestbrands/Bestbrands'
 import Toppicks from './Toppicks/Toppicks'
 import Catagories from './Catagories/Catagories'
-import { useSelector } from "react-redux";
 
 const Home = () => {
 
