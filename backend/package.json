@@ -1,14 +1,14 @@
 {
   "name": "myntra",
   "version": "1.0.0",
-  "description": "",
+  "description": "myntra clone",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
     "build":"npm install"
   },
-  "author": "",
+  "author": "suryansh",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
