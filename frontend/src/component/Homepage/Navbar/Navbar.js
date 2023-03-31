@@ -171,7 +171,7 @@ const Navbar = () => {
                 {" "}
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Myntra_Logo.png?20210915004801"
-                  alt="image"
+                  alt="img"
                 />
               </Link>
             </div>
