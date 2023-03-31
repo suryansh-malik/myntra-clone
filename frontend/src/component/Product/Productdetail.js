@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState,useCallback} from 'react'
 import {  useNavigate, useParams } from "react-router-dom";
 import Navbar from "../Homepage/Navbar/Navbar";
 import { bagproduct, resmessage } from '../../store/store';
@@ -24,7 +24,7 @@ const Productdetails = () => {
   // ======================//
   // fetching all details about one products
   // ======================//
-  const fetchingproduct = async () => {
+  const fetchingproduct = useCallback(async () => {
     setloading(true);
     const response = await fetch(`/product/${ppp}`, {
       method: "GET",
@@ -40,7 +40,7 @@ const Productdetails = () => {
     if (response.status === 409) {
       navigate("/*");
     }
-  };
+  },[navigate,ppp]);
 
   // ======================//
   // checking product already on bag or not
@@ -60,7 +60,7 @@ const Productdetails = () => {
   });
   useEffect(() => {
     fetchingproduct();
-  }, [ppp]);
+  }, [ppp,fetchingproduct]);
   const addtobag = async () => {
     const addedproduct = {
       quantity: 1,
