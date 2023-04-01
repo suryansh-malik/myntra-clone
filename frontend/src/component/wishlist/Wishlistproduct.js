@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { wishlist } from "../../store/store";
-
+import { BASE_URL } from '../../Baseurl';
 const Wishlistproduct = (props) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Wishlistproduct = (props) => {
   // remove product from wishlist 
   // ======================//
   const removewishlist = async () => {
-    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/removefromwishlist`, {
+    const response = await fetch(`${BASE_URL}/removefromwishlist`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
