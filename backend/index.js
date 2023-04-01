@@ -30,10 +30,5 @@ mongoose
   .then((res) => {
     const server = app.listen(process.env.PORT||1337);
     console.log("server started")
-    const io = require("socket.io")(server, {
-      cors: {
-        origin: "*",
-        methods: ["GET", "POST"],
-      },
-    });
+    
   });
