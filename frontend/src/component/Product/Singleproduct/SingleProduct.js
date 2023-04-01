@@ -4,7 +4,7 @@ const Singleproduct = (props) => {
 const navigate = useNavigate()
 
   const productclicked = () => {
-  navigate(`${process.env.MYNTRA_CLONE_BACKEND}/product/${props.id}`)
+  navigate(`/product/${props.id}`)
 }
 
 
