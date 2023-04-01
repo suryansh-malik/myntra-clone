@@ -49,7 +49,7 @@ const Product = () => {
   const fetching = useCallback(async () => {
     setloading(true);
     const response = await fetch(
-      `https://myntra-clone-api.onrender.com/products/${gendername}`,
+      `${process.env.MYNTRA_CLONE_BACKEND}/products/${gendername}`,
       {
         method: "GET",
         "Content-Type": "application/json",
