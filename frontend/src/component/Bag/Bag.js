@@ -35,7 +35,7 @@ const Bag = () => {
   // fetching bag product
   // ======================//
   const fetching = () => {
-    fetch("/cart", {
+    fetch(`${process.env.MYNTRA_CLONE_BACKEND}/cart`, {
       method: "GET",
       headers: { Authorization: localStorage.getItem("token") },
     }).then((res) => {
