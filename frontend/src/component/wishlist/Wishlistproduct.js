@@ -16,7 +16,7 @@ const Wishlistproduct = (props) => {
   // remove product from wishlist 
   // ======================//
   const removewishlist = async () => {
-    const response = await fetch("/removefromwishlist", {
+    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/removefromwishlist`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
