@@ -26,7 +26,7 @@ const Productdetails = () => {
   // ======================//
   const fetchingproduct = useCallback(async () => {
     setloading(true);
-    const response = await fetch(`/product/${ppp}`, {
+    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/product/${ppp}`, {
       method: "GET",
       headers: {
         "content-type": "appliation/json",
@@ -78,7 +78,7 @@ const Productdetails = () => {
     // add product to bag
     // ======================//
     if (auth) {
-      const response = await fetch("/addtocart", {
+      const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/addtocart`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -117,7 +117,7 @@ const Productdetails = () => {
         offpercentage: product.offpercentage,
         productname: product.productname,
       };
-      const response = await fetch("/addtowishlist", {
+      const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/addtowishlist`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
