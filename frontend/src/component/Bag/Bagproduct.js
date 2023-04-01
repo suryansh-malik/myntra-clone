@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux"
 import { bagproduct } from '../../store/store'
 import { FaRupeeSign } from "@react-icons/all-files/fa/FaRupeeSign";
 import { useNavigate } from 'react-router-dom';
-
+import { BASE_URL } from '../../Baseurl';
 
 const Bagproduct = (props) => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Bagproduct = (props) => {
   // remove product from bag
   // ======================//
   const removeproducts = async () => {
-    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/cartproductremove`, {
+    const response = await fetch(`${BASE_URL}/cartproductremove`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -45,7 +45,7 @@ const Bagproduct = (props) => {
     };
     dispatch(bagproduct.quantitychange(data));
     setquantity(event.target.value);
-    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/quantitychanged`, {
+    const response = await fetch(`${BASE_URL}/quantitychanged`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
