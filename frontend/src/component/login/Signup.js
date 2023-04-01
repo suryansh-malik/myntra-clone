@@ -98,7 +98,7 @@ const Signup = () => {
       });
 
       if (response.ok) {
-        Navigate("/login");
+        Navigate(`${process.env.MYNTRA_CLONE_BACKEND}/login`);
         dispatch(resmessage.setmessage("account created"));
         dispatch(resmessage.setshowmessage(true));
         setTimeout(() => {
