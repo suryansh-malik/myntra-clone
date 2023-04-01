@@ -2,5 +2,5 @@
     "version":2,
     "name":"project_deployment",
     "builds":[{"src":"./index.js","use":"@vercel/node"}],
-    "routes":[{"src":"/(.*)","status":404,"destination":"/"}]
+    "routes":[{"src":"/(.*)","status":404,"dest":"/"}]
 }
