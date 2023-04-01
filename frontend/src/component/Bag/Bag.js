@@ -5,6 +5,7 @@ import { bagproduct } from "../../store/store";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { BASE_URL } from "../../Baseurl";
 
 const Bag = () => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const Bag = () => {
   // fetching bag product
   // ======================//
   const fetching = () => {
-    fetch(`${process.env.MYNTRA_CLONE_BACKEND}/cart`, {
+    fetch(`${BASE_URL}/cart`, {
       method: "GET",
       headers: { Authorization: localStorage.getItem("token") },
     }).then((res) => {
