@@ -5,7 +5,7 @@ import Navbar from "../Homepage/Navbar/Navbar";
 import Singleproduct from "./Singleproduct/SingleProduct";
 import {mainproduct} from '../../store/store'
 import { useNavigate, useParams } from "react-router-dom";
-
+import { BASE_URL } from '../../Baseurl';
 const Product = () => {
   const [loading, setloading] = useState(false);
   const dispatch = useDispatch();
@@ -49,7 +49,7 @@ const Product = () => {
   const fetching = useCallback(async () => {
     setloading(true);
     const response = await fetch(
-      `${process.env.MYNTRA_CLONE_BACKEND}/products/${gendername}`,
+      `${BASE_URL}/products/${gendername}`,
       {
         method: "GET",
         "Content-Type": "application/json",
