@@ -44,7 +44,7 @@ const Login = () => {
     event.preventDefault();
 
     if (formvalid) {
-      const response = await fetch("/login", {
+      const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/login`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
