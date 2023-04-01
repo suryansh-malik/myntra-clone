@@ -9,6 +9,7 @@ import { FaRupeeSign } from "@react-icons/all-files/fa/FaRupeeSign";
 import { FiArrowRight } from "@react-icons/all-files/fi/FiArrowRight";
 // BiRightArrowAlt;
 import { wishlist } from '../../store/store';
+import { BASE_URL } from '../../Baseurl';
 
 const Productdetails = () => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const Productdetails = () => {
   // ======================//
   const fetchingproduct = useCallback(async () => {
     setloading(true);
-    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/product/${ppp}`, {
+    const response = await fetch(`${BASE_URL}/product/${ppp}`, {
       method: "GET",
       headers: {
         "content-type": "appliation/json",
@@ -78,7 +79,7 @@ const Productdetails = () => {
     // add product to bag
     // ======================//
     if (auth) {
-      const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/addtocart`, {
+      const response = await fetch(`${BASE_URL}/addtocart`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -117,7 +118,7 @@ const Productdetails = () => {
         offpercentage: product.offpercentage,
         productname: product.productname,
       };
-      const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/addtowishlist`, {
+      const response = await fetch(`${BASE_URL}/addtowishlist`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
