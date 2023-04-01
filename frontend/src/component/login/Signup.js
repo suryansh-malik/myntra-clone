@@ -5,7 +5,7 @@ import "./signup.css";
 import useValidation from "./Formvalidation/Formvalidation"
 import { resmessage } from "../../store/store";
 import { useDispatch } from "react-redux";
-
+import { BASE_URL } from '../../Baseurl';
 const Signup = () => {
   const dispatch = useDispatch();
   const Navigate = useNavigate();
@@ -84,7 +84,7 @@ const Signup = () => {
   const signupformsubmitted = async (event) => {
     event.preventDefault();
     if (formisvalid) {
-      const response = await fetch("/signup", {
+      const response = await fetch(`${BASE_URL}/signup`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
