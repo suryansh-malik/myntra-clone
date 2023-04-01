@@ -5,6 +5,7 @@ import Navbar from "../Homepage/Navbar/Navbar";
 import useValidation from "./Formvalidation/Formvalidation";
 import "./login.css";
 import { authenticate, resmessage, user, wishlist } from "../../store/store";
+import { BASE_URL } from '../../Baseurl';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -44,7 +45,7 @@ const Login = () => {
     event.preventDefault();
 
     if (formvalid) {
-      const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/login`, {
+      const response = await fetch(`${BASE_URL}/login`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
