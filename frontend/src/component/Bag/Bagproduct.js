@@ -16,7 +16,7 @@ const Bagproduct = (props) => {
   // remove product from bag
   // ======================//
   const removeproducts = async () => {
-    const response = await fetch("/cartproductremove", {
+    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/cartproductremove`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -45,7 +45,7 @@ const Bagproduct = (props) => {
     };
     dispatch(bagproduct.quantitychange(data));
     setquantity(event.target.value);
-    const response = await fetch("/quantitychanged", {
+    const response = await fetch(`${process.env.MYNTRA_CLONE_BACKEND}/quantitychanged`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
